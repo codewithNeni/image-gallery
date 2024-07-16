@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+
+}
+
+body{
+    background-color: #0000001f;
+}
+
+:root{
+    --mobile-h2-font-size: 2.2rem;
+    --dekstop-h2-fontsize : 2rem;
+}
+
+/* Nav bar Starts From Here */
+
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    z-index: 4; /* Ensures the navbar is above other content */
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+}
+
+.navbar-logo img {
+    height: 100px;
+    cursor: pointer;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::after,
+.navbar-links a.active::after {
+    width: 100%;
+}
+
+.menu-icon {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: #3333339d;
+    padding-top: 60px;
+    transition: 0.3s;
+    overflow-x: hidden;
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Full viewport height */
+    background: url('Assets/College/1.jpg') no-repeat center center;
+    background-size: cover; /* Make sure the image covers the entire section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    width: 60%;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin: 10px 0 0;
+}
+
+@media (max-width: 1068px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .sidebar {
+        display: block;
+        width: 0;
+    }
+
+    .sidebar.active {
+        width: 250px;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        z-index: 4; /* Ensures the navbar is above other content */
+        backdrop-filter: blur(10px); /* Apply a blur effect */
+    }
+    
+    .navbar-logo img {
+        height: 100px;
+        cursor: pointer;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-content {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-content {
+        width: 90%;
+    }
+}
+
+/* Nav bar Ends Here */
+
+/* Hero Starts From Here */
+
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: url('Assets/Hero-img.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.801);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    width: 60%;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.4rem;
+    margin: 10px 0 0;
+    color: rgba(255, 255, 255, 0.938);
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+    
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    width: 90%;
+}
+}
+
+/* Hero Ends Here */
+
+
+/* Gallery Starts From Here */
+
+
+.image-gallery {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px; /* Adjust the max-width as needed */
+}
+
+.gallery-section {
+    margin-bottom: 40px;
+    width: 100%;
+
+}
+
+.gallery-section h3 {
+    font-size: 2.9rem;
+    margin: 70px;
+    text-align: left;
+    width: 100%;
+    max-width: 1200px; /* Adjust the max-width as needed */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+
+}
+
+.gallery img {
+    width: 300px;
+    cursor: pointer;
+    height: 300px;
+    transition: transform 0.3s ease; /* Smooth transition for the transform */
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+    
+}
+
+.gallery img:hover {
+    transform: scale(1.25) translateY(-10px); /* Scale the image and move it up on hover */
+}
+
+@media (max-width: 768px) {
+    .gallery img {
+        width: 150px; /* Adjust image size for tablets */
+        height: 150px;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.33) translateY(-5px); /* Adjust scale and move up on hover for tablets */
+    }
+
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    .gallery-section h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery img {
+        width: 200px; /* Adjust image size for mobile devices */
+        height: 200px;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.5) translateY(-3px); /* Adjust scale and move up on hover for mobile devices */
+    }
+
+    .main-heading {
+        font-size: 1.5rem;
+    }
+
+    .gallery-section h3 {
+        font-size: 1.25rem;
+    }
+}
+/* gallery Ends Here */
