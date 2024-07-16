@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Gallery</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header Starts From Here -->
+
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="Assets/logo.jpg" alt="">
+            </div>
+            <ul class="navbar-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Academics</a></li>
+                <li><a href="#">Achievements</a></li>
+                <li><a href="#">Life at Fazaia</a></li>
+                <li><a href="#">Picture Gallery</a></li>
+                <li><a href="#">Facilities</a></li>
+                <li><a href="#">Upcoming Events</a></li>
+                <li><a href="#">Admission</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <button class="menu-icon" onclick="toggleSidebar()">&#9776;</button>
+        </nav>
+    
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>A Glimpse Into Our College Life</h1>
+                <p>Discover the vibrant life at Fazaia Intermediate College through our image gallery. See our students
+                    in action, from classroom activities and sports events to arts performances and school trips.
+                    Experience the essence of our community and the moments that make our school unique.
+                </p>
+            </div>
+        </div>
+    
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidebar">
+            <button class="close-btn" onclick="toggleSidebar()">&times;</button>
+            <a href="#" onclick="closeSidebar()">Home</a>
+            <a href="#" onclick="closeSidebar()">About Us</a>
+            <a href="#" onclick="closeSidebar()">Academics</a>
+            <a href="#" onclick="closeSidebar()">Achievements</a>
+            <a href="#" onclick="closeSidebar()">Life at Fazaia</a>
+            <a href="#" onclick="closeSidebar()">Picture Gallery</a>
+            <a href="#" onclick="closeSidebar()">Facilities</a>
+            <a href="#" onclick="closeSidebar()">Upcoming Events</a>
+            <a href="#" onclick="closeSidebar()">Admission</a>
+            <a href="#" onclick="closeSidebar()">Contact Us</a>
+        </div>
+    </header>
+    
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    
+        function closeSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.remove('active');
+        }
+    </script>
+
+    <!-- Header Ends Here -->
+
+    <!-- Gallery Starts From Here -->
+
+    <section class="image-gallery">
+        <h2 class="main-heading">Picture Gallery</h2>
+
+        <div class="gallery-container">
+            <div class="gallery-section">
+                <h3>Events :</h3>
+                <div class="gallery">
+                    <!-- Demo Images -->
+                    <img src="Assets/Events/449334377_914642743801002_6250399610568984685_n.jpg" alt="Demo Image 1">
+                    <img src="Assets/Events/449445176_914641517134458_1572473610230186359_n.jpg" alt="Demo Image 2">
+                    <img src="Assets/Events/449446459_914641613801115_7747861389497899886_n.jpg" alt="Demo Image 3">
+                    <img src="Assets/Events/449458917_914640913801185_6191575585458025712_n.jpg" alt="Demo Image 4">
+                    <img src="Assets/Events/449465706_914640677134542_3488184676837563362_n.jpg" alt="Demo Image 5">
+                    <img src="Assets/Events/449466860_914642797134330_435292305752233067_n.jpg" alt="Demo Image 6">
+                    <img src="Assets/Events/449481727_914642703801006_4336379082634822259_n.jpg" alt="Demo Image 7">
+                    <img src="Assets/Events/449483583_914640453801231_7959787164116054330_n.jpg" alt="Demo Image 8">
+                    <img src="Assets/Events/449530861_914641570467786_4394034679944516291_n.jpg" alt="Demo Image 9">
+                    <img src="Assets/Events/449613131_914640347134575_4373065844630318202_n.jpg" alt="Demo Image 10">
+                    <img src="Assets/Events/449627133_913243063940970_6809745608568278838_n.jpg" alt="Demo Image 11">
+                    <img src="Assets/Events/449641497_914641483801128_7721207612824334502_n.jpg" alt="Demo Image 12">
+                    <img src="Assets/Events/449679237_913243113940965_2146832279602634954_n.jpg" alt="Demo Image 13">
+                    <img src="Assets/Events/449685251_914448480487095_1056293879093453227_n.jpg" alt="Demo Image 14">
+                    <img src="Assets/Events/449689553_914448557153754_2966250197343798837_n.jpg" alt="Demo Image 15">
+                    <img src="Assets/Events/449689956_914447797153830_8342076915893536298_n.jpg" alt="Demo Image 16">
+                    <img src="Assets/Events/449693054_914448420487101_4471798994979307351_n.jpg" alt="Demo Image 17">
+                    <img src="Assets/Events/449697360_914447667153843_5047437677008311340_n.jpg" alt="Demo Image 18">
+                    <img src="Assets/Events/449722987_914640390467904_871451507993529589_n.jpg" alt="Demo Image 19">
+                    <img src="Assets/Events/449723401_914641540467789_6484428191032324633_n.jpg" alt="Demo Image 20">
+                    <img src="Assets/Events/449723896_914640957134514_987166665403744795_n.jpg" alt="Demo Image 20">
+                    <img src="Assets/Events/449735232_914635697135040_5770171649095654945_n.jpg" alt="Demo Image 20">
+                    <img src="Assets/Events/449751230_914474553817821_5228003874108024690_n.jpg" alt="Demo Image 20">
+                    <img src="Assets/Events/449753748_914640413801235_1494936470699217063_n.jpg" alt="Demo Image 20">
+                    <img src="Assets/Events/449774225_914447763820500_7605620452101218890_n.jpg" alt="Demo Image 20">
+                    <img src="Assets/Events/449780462_914447980487145_7338781680135967403_n.jpg" alt="Demo Image 20">
+                </div>
+            </div>
+
+            <div class="gallery-section">
+                <h3>Model United Nations :</h3>
+                <div class="gallery">
+                    <!-- Demo Images -->
+                    <img src="Assets/Model United Nations/2.jpg" alt="Demo Image 1">
+                    <img src="Assets/Model United Nations/3.jpg" alt="Demo Image 2">
+                    <img src="Assets/Model United Nations/4.jpg" alt="Demo Image 3">
+                    <img src="Assets/Model United Nations/449724131_914641440467799_4925418282204790296_n.jpg" alt="Demo Image 4">
+                    <img src="Assets/Model United Nations/5.jpg" alt="Demo Image 5">
+                    <img src="Assets/Model United Nations/6.jpg" alt="Demo Image 6">
+                    <img src="Assets/Model United Nations/7.jpg" alt="Demo Image 7">
+                    <img src="Assets/Model United Nations/8.jpg" alt="Demo Image 8">
+                    <img src="Assets/Model United Nations/9.jpg" alt="Demo Image 9">
+                </div>
+            </div>
+
+            <div class="gallery-section">
+                <h3>Education :</h3>
+                <div class="gallery">
+                    <!-- Demo Images -->
+                    <img src="Assets/education/1.jpg" alt="Demo Image 1">
+                    <img src="Assets/education/2.jpg" alt="Demo Image 2">
+                    <img src="Assets/education/3.jpg" alt="Demo Image 3">
+                    <img src="Assets/education/4.jpg" alt="Demo Image 4">
+                    <img src="Assets/education/5.jpg" alt="Demo Image 5">
+                    <img src="Assets/education/6.jpg" alt="Demo Image 6">
+                    <img src="Assets/education/7.jpg" alt="Demo Image 7">
+                    <img src="Assets/education/8.jpg" alt="Demo Image 8">
+                    <img src="Assets/education/9.jpg" alt="Demo Image 8">
+                    <img src="Assets/education/10.jpg" alt="Demo Image 6">
+                    <img src="Assets/education/11.jpg" alt="Demo Image 7">
+                    <img src="Assets/education/12.jpg" alt="Demo Image 8">
+                    <img src="Assets/education/13.jpg" alt="Demo Image 8">
+                    <img src="Assets/education/14.jpg" alt="Demo Image 7">
+                    <img src="Assets/education/15.jpg" alt="Demo Image 8">
+                    <img src="Assets/education/16.jpg" alt="Demo Image 8">
+                    <img src="Assets/education/17.jpg" alt="Demo Image 6">
+                    <img src="Assets/education/18.jpg" alt="Demo Image 7">
+                    <img src="Assets/education/19.jpg" alt="Demo Image 8">
+                    <img src="Assets/education/20.jpg" alt="Demo Image 8">
+                    <img src="Assets/education/21.jpg" alt="Demo Image 8">
+                    <img src="Assets/education/22.jpg" alt="Demo Image 8">
+                    <img src="Assets/education/23.jpg" alt="Demo Image 8">
+                    <img src="Assets/education/24.jpg" alt="Demo Image 8">
+                </div>
+            </div>
+
+            <div class="gallery-section">
+                <h3>College :</h3>
+                <div class="gallery">
+                    <!-- Demo Images -->
+                    <img src="Assets/College/1.jpg" alt="Demo Image 1">
+                    <img src="Assets/College/2.jpg" alt="Demo Image 1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Ends Here -->
+
+
+</body>
+
+</html>
